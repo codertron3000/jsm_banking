@@ -35,7 +35,6 @@ function MobileNav({ user }: MobileNavProps) {
               width={34}
               height={34}
               alt='Horizon Logo'
-              className='size-[24px max-xl:size-14'
             />
             <h1 className='text-26 font-ibm-plex-serif font-bold text-black-1'>
               Horizon
