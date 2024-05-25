@@ -19,16 +19,19 @@ function Home() {
             user={loggedIn?.firstName || 'Guest'}
             subtext='Access and manage your account and transactions efficiently.'
           />
-
           <TotalBalanceBox
             accounts={[]}
             totalBanks={1}
             totalCurrentBalance={1250.35}
           />
+          RECENT TRANSACTIONS
         </header>
-        RECENT TRANSACTIONS
       </div>
-      <RightSidebar user={loggedIn} transactions={[]} banks={[{}, {}]} />
+      <RightSidebar
+        user={loggedIn}
+        transactions={[]}
+        banks={[{ currentBalance: 123.5 }, { currentBalance: 345.89 }]}
+      />
     </section>
   );
 }
